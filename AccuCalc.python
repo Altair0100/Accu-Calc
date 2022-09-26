@@ -1,0 +1,75 @@
+import time as t
+def intro():
+	print('''AccuCalc''')
+	t.sleep(1.2)
+	print("Made by\n")
+	t.sleep(1.6)
+	print("Altair\n")
+	t.sleep(2)
+	print("w/Python")
+	t.sleep(0.8)
+	print("Let's Begin!\n\n\n")
+	t.sleep(1)
+def sum(x,y):
+	print(x+y)
+def sub(x,y):
+	print(x-y)
+def mul(x,y):
+	print(x*y)
+def div(x,y):
+	print(x/y)
+def rem(x,y):
+	print(x%y)
+def stq(x,y):
+	print((x+y)+y*y)
+def mtq(x,y):
+	print((x-y)+y*y)
+def dtq(x,y):
+	print((x//y)+y*y)
+def rtq(x,y):
+	print((x%y)+y*y)
+def qbn(x,y):
+	print(x,":",x*x,"\n",y,":",y*y)
+
+
+intro()
+num = 1
+while num <= 262:
+	try:
+		x=int(input("First Number:\n>"))
+		func=input("\nEnter one of the following for a sign:\na = +\ns = -\nm = *\nd = /\nr = /(remainder)\nstq = sum then square\nmtq = multiply then square\ndtq = divide then square\nrtq = square remainder\nq = square\n>")
+		print("\n")
+		y=int(input("Second Number:\n>"))
+		print("\nAnswer:\n\n")
+		if func.upper()=="A":
+			sum(x,y)
+		elif func.upper()=="S":
+			sub(x,y)
+		elif func.upper()=="M":
+			mul(x,y)
+		elif func.upper()=="D":
+			div(x,y)
+		elif func.upper()=="R":
+			rem(x,y)
+		elif func.upper()=="STQ":
+			stq(x,y)
+		elif func.upper()=="MTQ":
+			mtq(x,y)
+		elif func.upper()=="DTQ":
+			dtq(x,y)
+		elif func.upper()=="RTQ":
+			rtq(x,y)
+		elif func.upper()=="Q":
+			qbn(x,y)
+		else:
+			raise ImportError
+		print("\n\n")
+		num +=1
+	except ZeroDivisionError:
+		print("Error: Cannot divide by 0\n")
+	except ValueError:
+		print("Error: You didn't type a \"number\"\n")
+	except TypeError:
+		print("Error: Something went wrong\n")
+	except:
+		print("Error: An Unknown Error Occured\n")
