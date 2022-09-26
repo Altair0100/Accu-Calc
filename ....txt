@@ -1,0 +1,21 @@
+                             AccuCalc								
+~Made By Altair
+~With Python
+~With lots of features
+~And basic operators
+~Simple to understand
+~Instructions while running
+~Simple code
+~Less size
+~Utility
+
+A calculator with a lot of features such as stq, q, rtq, dtq, mtq and much more.
+It also contains basic operators i.e. Addition, Subtraction, Multiplication and Division.
+
+Expecting these features in next update:
+-Exponent
+-Lcm of two numbers
+-Even and Odd numbers checker 
+
+Project completed on:
+26/Sep/2022 19:10:59 GMT+05:30
